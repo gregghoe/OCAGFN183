@@ -12,6 +12,8 @@ public class StreichelZoo
 	Puma robert = new Puma();
 	Eisbaer robin = new Eisbaer();
 	Loewe joachim = new Loewe();
+	Hai steffen = new Hai();
+	
 	
 	Pinguin pp = new Pinguin();
 	Ratte rr = new Ratte();
