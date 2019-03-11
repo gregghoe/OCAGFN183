@@ -1,4 +1,4 @@
-package katzen;
+package haupt;
 
 public class KatzenHaus
 {
