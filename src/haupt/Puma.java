@@ -8,6 +8,7 @@ public class Puma extends Tier implements IRaubtier
 	{this.name=name;
 	this.leben=leben;
 	// test
+	//hshfvlujsfhseiogb
 		
 	}
 	@Override
