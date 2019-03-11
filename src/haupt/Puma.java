@@ -5,7 +5,7 @@ public class Puma extends Tier implements IRaubtier
     private String name;
     private int leben;
 	public Puma()
-	{this.name="robert";
+	{this.name="robert ";
 	this.leben=18;
 	// test
 	//hshfvlujsfhseiogb
