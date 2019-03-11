@@ -8,7 +8,7 @@ public class Eisbaer extends Tier implements IRaubtier
 	{
 		if (opfer.getLeben() > 0)
 		{
-			
+			System.out.println("FUU");
 			System.out.println(this.getName()+ "Mampft");
 			opfer.setLeben(opfer.getLeben() -1);		
 			return true;
