@@ -1,3 +1,5 @@
+package haupt;
+
 
 public interface IRaubtier
 {
