@@ -1,6 +1,6 @@
 package haupt;
 
-public class Wolf extends Tier
+public class Wolf extends Tier implements IRaubtier
 {
 
 	@Override
@@ -29,6 +29,20 @@ public class Wolf extends Tier
 	{
 		// TODO Auto-generated method stub
 
+	}
+
+	@Override
+	public boolean fresse(IOpfertier opfer)
+	{
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public String kampfschrei()
+	{
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
