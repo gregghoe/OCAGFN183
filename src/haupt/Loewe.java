@@ -2,19 +2,39 @@ package haupt;
 
 public class Loewe extends Tier implements IRaubtier
 {
+	private int staerke=0;
+	
+	public Loewe(int staerke)
+	{
+		this.staerke=staerke;
+	}
+	
+
+	public int getStaerke()
+	{
+		return staerke;
+	}
+	public void setStaerke(int staerke)
+	{
+		this.staerke = staerke;
+	}
 
 	@Override
 	public boolean fresse(IOpfertier opfer)
 	{
-		// TODO Auto-generated method stub
+		if(opfer.getLeben()<this.staerke)
+		{
+			opfer.setLeben(getLeben());
+		}
 		return false;
 	}
 
 	@Override
 	public String kampfschrei()
 	{
-		// TODO Auto-generated method stub
-		return null;
+		String ruf = "Ich heise " + this.getName()
+				+ ". Fauch ich bin ein Löwe.";
+		return ruf;
 	}
 
 	@Override
@@ -34,14 +54,15 @@ public class Loewe extends Tier implements IRaubtier
 	@Override
 	public boolean lebendig()
 	{
-		// TODO Auto-generated method stub
-		return false;
+		System.out.println(this.getName()+" hurra... ich lebe noch, mein Leben beträgt:" + 
+							this.getLeben());
+		return true;
 	}
 
 	@Override
 	public void aua()
 	{
-		// TODO Auto-generated method stub
+		System.out.println("Aua, hee wer beist mich da???");
 
 	}
 
