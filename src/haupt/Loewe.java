@@ -2,31 +2,55 @@ package haupt;
 
 public class Loewe extends Tier implements IRaubtier
 {
-	private int staerke=0;
+	private int leben;
+	private int staerke;
+	private int lautstaerke;
 	
-	public Loewe(int staerke)
-	{
-		this.staerke=staerke;
-	}
 	
-
-	public int getStaerke()
+	
+	public Loewe(int leben, int staerke, int lautstaerke)
 	{
-		return staerke;
-	}
-	public void setStaerke(int staerke)
-	{
+		this.leben = leben;
 		this.staerke = staerke;
+		this.lautstaerke = lautstaerke;
 	}
+	public Loewe(int leben, int staerke)
+	{
+		this(leben,staerke,5);
+		
+	}
+	public Loewe(int leben)
+	{
+		this(leben,9);
+	}	
+	public Loewe()
+	{
+		this(7);
+	}
+	
+	public void setLeben(int leben)
+	{
+		this.leben = leben;
+	}
+
+
+
 
 	@Override
 	public boolean fresse(IOpfertier opfer)
 	{
-		if(opfer.getLeben()<this.staerke)
+		if(Math.random()>0.8)
 		{
-			opfer.setLeben(getLeben());
+			opfer.schreie();
+			opfer.stirb();
+			System.out.println(this.getName()+" ich bin satt!!!");
+		return true;
 		}
+		else
+		{
+			System.out.println("Mist es ist entkommen, ich habe noch Hunger");
 		return false;
+		}
 	}
 
 	@Override
@@ -38,18 +62,14 @@ public class Loewe extends Tier implements IRaubtier
 	}
 
 	@Override
-	public String getName()
-	{
-		// TODO Auto-generated method stub
-		return null;
-	}
+	public String getName()	
+	
+	{return this.getName();}
 
 	@Override
 	public int getLeben()
-	{
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	
+	{return this.leben;	}
 
 	@Override
 	public boolean lebendig()
