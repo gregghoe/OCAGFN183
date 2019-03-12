@@ -2,20 +2,23 @@ package haupt;
 
 public class Eisbaer extends Tier implements IRaubtier
 {
+	boolean hunger = true;
 	
 	@Override
 	public boolean fresse(IOpfertier opfer) 
 	{
-		if (opfer.getLeben() > 0)
+		if (hunger == true)
 		{
-			System.out.println("FUU");
-			System.out.println(this.getName()+ "Mampft");
-			opfer.setLeben(opfer.getLeben() -1);		
+			this.kampfschrei();
+			opfer.schreie();
+			opfer.stirb();
+			System.out.println(this.getName()+ "Mampft");	
+			hunger = false;
 			return true;
 			}
 		else
 		{
-			System.out.println(this.getName()+ " sagt: Nope nix zu fressen da");
+			System.out.println(this.getName()+ " sagt: bin nicht hungrig");
 			return false;
 		}
 		
