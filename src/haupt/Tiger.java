@@ -42,11 +42,8 @@ public class Tiger extends Tier implements IRaubtier {
 	}
 	@Override
 	public boolean lebendig() {
-		if (this.getLeben()>0) {
-			return true;
-		} else {
-			return false;
-		}		
+		if (this.getLeben()>0) {return true;} 
+		else {return false;}		
 	}
 	
 	@Override
