@@ -18,7 +18,6 @@ public class Eisbaer extends Tier implements IRaubtier
 			System.out.println(this.getName()+ " sagt: Nope nix zu fressen da");
 			return false;
 		}
-		
 	}
 
 	@Override
