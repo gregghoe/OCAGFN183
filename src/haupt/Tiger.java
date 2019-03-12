@@ -14,7 +14,6 @@ public class Tiger extends Tier implements IRaubtier {
 	@Override
 	public boolean fresse(IOpfertier opfer) {
 		if(ThreadLocalRandom.current().nextBoolean()) {
-			opfer.schreie();
 			opfer.stirb();
 			System.out.println("Tiger frisst Opfer!");
 			return true;
@@ -25,16 +24,29 @@ public class Tiger extends Tier implements IRaubtier {
 	}
 	@Override
 	public String kampfschrei() {
-		return this.getName()+": RAAAR!!! Auf nach Rom!";
+		String s ="";
+		if(this.lebendig()) {
+			s=this.getName()+"(Leben="+this.getLeben()+"): RAAAR!!! Auf nach Rom!";
+		} else {
+			s="Tiger tot";
+		}
+		System.out.println(s);
+		return s;
 	}
 	@Override
 	public void aua() {
-		System.out.println("Tiger "+this.getName()+": AUA");
+		System.out.print("Tiger "+this.getName()+" Leben von "
+				+this.getLeben()+" auf ");
+		this.leben-=ThreadLocalRandom.current().nextInt(this.leben);
+		System.out.println(this.getLeben()+" reduziert.");
 	}
 	@Override
 	public boolean lebendig() {
-		if (this.getLeben()>0) {return true;} 
-		else {return false;}		
+		if (this.getLeben()>0) {
+			return true;
+		} else {
+			return false;
+		}		
 	}
 	
 	@Override
