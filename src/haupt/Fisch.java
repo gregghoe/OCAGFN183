@@ -5,6 +5,7 @@ public class Fisch extends Tier implements IOpfertier
 	private String 	name;
 	private int 	leben = 1;
 	
+	
 	@Override
 	public String getName() {
 		this.name = "Klaus der Fisch";
