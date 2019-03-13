@@ -57,14 +57,14 @@ public class Loewe extends Tier implements IRaubtier
 	public String kampfschrei()
 	{
 		String ruf = "Ich heise " + this.getName()
-				+ ". Fauch ich bin ein Löwe.";
+				+ ". Fauch ich bin ein Lï¿½we.";
 		return ruf;
 	}
 
 	@Override
 	public String getName()	
 	
-	{return this.getName();}
+	{return this.name;}
 
 	@Override
 	public int getLeben()
@@ -74,7 +74,7 @@ public class Loewe extends Tier implements IRaubtier
 	@Override
 	public boolean lebendig()
 	{
-		System.out.println(this.getName()+" hurra... ich lebe noch, mein Leben beträgt:" + 
+		System.out.println(this.getName()+" hurra... ich lebe noch, mein Leben betrï¿½gt:" + 
 							this.getLeben());
 		return true;
 	}
