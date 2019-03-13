@@ -7,10 +7,10 @@ public class Zebra extends Tier implements IOpfertier
 
 	@Override
 	public String getName()
-	{		return this.getName();	}
+	{		return this.name;	}
 	@Override
 	public int getLeben()
-	{		return this.getLeben();	}
+	{		return this.leben;	}
 	@Override
 	public void setLeben(int i)
 	{

@@ -58,16 +58,29 @@ public class StreichelZoo
 	john.schreie();
 
 	
-	IRaubtier[] raubtiere = new IRaubtier[10];
-	for (int j = 0; j < raubtiere.length; j++) {
-		switch(ThreadLocalRandom.current().nextInt(6)) {
-		case 0: raubtiere[j] = new Wolf(); raubtiere[j].fresse(new Gazelle()); break;
-		case 1: raubtiere[j] = new Tiger(); raubtiere[j].fresse(new Gazelle()); break;
-		case 2: raubtiere[j] = new Puma(); raubtiere[j].fresse(new Gazelle()); break;
-		case 3: raubtiere[j] = new Eisbaer(); raubtiere[j].fresse(new Gazelle()); break;
-		case 4: raubtiere[j] = new Loewe(); raubtiere[j].fresse(new Gazelle()); break;
-		case 5: raubtiere[j] = new Hai("Hai "+j, 10); raubtiere[j].fresse(new Gazelle()); break;
+	IRaubtier[] raubtiere = new IRaubtier[100];
+	IOpfertier[] opfer = new IOpfertier[raubtiere.length];
+	for (int j = 0; j < raubtiere.length; j++) 
+	{
+	
+		switch(ThreadLocalRandom.current().nextInt(4)) 
+		{
+			case 0: opfer[j] = new Gazelle();  break;
+			case 1: opfer[j] = new Fisch();  break;
+			case 2: opfer[j] = new Robbe("Robbe "+i, 3) ;  break;
+			case 3: opfer[j] = new Zebra();  break;
 		}
+		
+		switch(ThreadLocalRandom.current().nextInt(6)) 
+		{
+			case 0: raubtiere[j] = new Wolf();  break;
+			case 1: raubtiere[j] = new Tiger();  break;
+			case 2: raubtiere[j] = new Puma();  break;
+			case 3: raubtiere[j] = new Eisbaer();  break;
+			case 4: raubtiere[j] = new Loewe(); break;
+			case 5: raubtiere[j] = new Hai("Hai "+j, 10);  break;
+		}
+		raubtiere[j].fresse(opfer[j]);
 	}
 //	------  OLEG-ENDE  ------
 	
