@@ -1,4 +1,6 @@
 package haupt;
+import java.util.concurrent.ThreadLocalRandom;
+
 // COMMIT FORCE
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -54,7 +56,7 @@ public class StreichelZoo
 
 	oleg.fresse(john);
 	john.schreie();
-<<<<<<< HEAD
+
 	
 	IRaubtier[] raubtiere = new IRaubtier[10];
 	for (int j = 0; j < raubtiere.length; j++) {
@@ -67,8 +69,6 @@ public class StreichelZoo
 		case 5: raubtiere[j] = new Hai("Hai "+j, 10); raubtiere[j].fresse(new Gazelle()); break;
 		}
 	}
-=======
->>>>>>> branch 'master' of https://github.com/rdkrl/OCAGFN183.git
 //	------  OLEG-ENDE  ------
 	
 	
