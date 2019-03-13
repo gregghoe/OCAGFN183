@@ -52,6 +52,7 @@ public class StreichelZoo
 	Gazelle john = new Gazelle();
 	oleg.kampfschrei();
 	john.schreie();
+	
 	john.aua();
 
 	oleg.fresse(john);
