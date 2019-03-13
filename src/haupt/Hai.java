@@ -9,6 +9,12 @@ public class Hai extends Tier implements IRaubtier
 		this.name = "Willy";
 		this.leben = 10;
 	}
+	
+	@Override
+	public String toString() 
+	{
+		return this.name +", ein Hai";
+	}
 
 	@Override
 	public boolean fresse(IOpfertier opfer)

@@ -39,6 +39,7 @@ public class Tiger extends Tier implements IRaubtier {
 				+this.getLeben()+" auf ");
 		this.leben-=ThreadLocalRandom.current().nextInt(this.leben);
 		System.out.println(this.getLeben()+" reduziert.");
+		String s = this.name.concat(" x_X ");
 	}
 	@Override
 	public boolean lebendig() {

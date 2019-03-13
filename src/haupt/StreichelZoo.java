@@ -11,7 +11,9 @@ public class StreichelZoo
 	public static void main(String[] args) throws Exception
 	{	
 	System.out.println("HALLO GIT");
+	Integer i = new Integer(1);
 	
+	i.equals(3);
 //	JFrame hauptwindow = new JFrame();
 //	JPanel hauptpanel = new JPanel();
 //	JButton jbb = new JButton("OK");
@@ -35,7 +37,7 @@ public class StreichelZoo
 	Loewe joachim = new Loewe();
 	//Panther daniel = new Panther();
 	Hai steffen = new Hai("Sharkie", 10);
-	
+	System.out.println(steffen);
 	steffen.fresse(new Gazelle());
 	joachim.fresse(new Fisch());
 	robin.fresse(new Robbe("kip", 2));
