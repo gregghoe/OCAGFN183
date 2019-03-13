@@ -6,7 +6,7 @@ public class Wolf extends Tier implements IRaubtier
 	@Override
 	public String getName()
 	{
-		// TODO Auto-generated method stub
+	    
 		return null;
 	}
 
@@ -27,22 +27,23 @@ public class Wolf extends Tier implements IRaubtier
 	@Override
 	public void aua()
 	{
-		// TODO Auto-generated method stub
+		
+		String aua = "Auaaaaaa es tut weh";
 
 	}
 
 	@Override
 	public boolean fresse(IOpfertier opfer)
 	{
-		// TODO Auto-generated method stub
+		
 		return false;
 	}
 
 	@Override
 	public String kampfschrei()
 	{
-		// TODO Auto-generated method stub
-		return null;
+		String hello ="uaaaaaaaahhhhh";
+		return hello;
 	}
 
 }
