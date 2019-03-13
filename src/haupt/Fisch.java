@@ -19,7 +19,7 @@ public class Fisch extends Tier implements IOpfertier
 		return leben;
 	}
 	
-// change
+// change...
 	
 	@Override
 	public boolean lebendig() {
@@ -32,7 +32,7 @@ public class Fisch extends Tier implements IOpfertier
 			return false;
 		}
 	}
-
+/////
 	@Override
 	public void aua() 
 	{
