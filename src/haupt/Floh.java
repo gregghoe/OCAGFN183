@@ -1,25 +1,20 @@
 package haupt;
 
-public class Floh
-{
+public class Floh {
+	
 	private String name;
 
-	public Floh(String name)
-	{
-		super();
+	public Floh(String name) {
 		this.name = name;
-		System.out.println(this.name + ": Ich hÃ¼p rum");
 	}
-
-	public String getName()
-	{
-		return name;
+	public Floh() {
+		this("#Floh#");
 	}
 
 	public void zeigDich()
 	{
-		System.out.println(this.name + "Ich hÃ¼pfe herum");
-		
+		System.out.println("Floh "+this.name + ": Ich h�pfe herum");
 	}
 	
+	public String getName() { return name; }
 }
