@@ -58,4 +58,11 @@ public class Robbe extends Tier implements IOpfertier
 		
 	}
 
+	@Override
+	public IOpfertier fortpflanze()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

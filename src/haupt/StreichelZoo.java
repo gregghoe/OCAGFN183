@@ -12,9 +12,12 @@ public class StreichelZoo
 	Puma robert = new Puma();
 	Eisbaer robin = new Eisbaer();
 	Loewe joachim = new Loewe();
-	Panther daniel = new Panther();
-//	Hai steffen = new Hai();
+	//Panther daniel = new Panther();
+	Hai steffen = new Hai("Sharkie", 10);
 	
+	steffen.fresse(new Gazelle());
+	joachim.fresse(new Fisch());
+	robin.fresse(new Robbe("kip", 2));
 	
 //	Pinguin pp = new Pinguin();
 //	Ratte rr = new Ratte();
