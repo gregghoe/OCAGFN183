@@ -32,7 +32,7 @@ public class Fisch extends Tier implements IOpfertier
 			return false;
 		}
 	}
-
+/////
 	@Override
 	public void aua() 
 	{
