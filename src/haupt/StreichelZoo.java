@@ -12,21 +12,21 @@ public class StreichelZoo
 	{	
 	System.out.println("HALLO GIT");
 	
-	JFrame hauptwindow = new JFrame();
-	JPanel hauptpanel = new JPanel();
-	JButton jbb = new JButton("OK");
-
-	hauptwindow.add(hauptpanel);
-	hauptpanel.add(jbb);
-	
-	
-	hauptwindow.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-	hauptwindow.pack();
-	hauptwindow.setVisible(true);
-	Thread.sleep(3000);
-	hauptwindow.setVisible(false);
-	Thread.sleep(3000);
-	hauptwindow.setVisible(true);
+//	JFrame hauptwindow = new JFrame();
+//	JPanel hauptpanel = new JPanel();
+//	JButton jbb = new JButton("OK");
+//
+//	hauptwindow.add(hauptpanel);
+//	hauptpanel.add(jbb);
+//	
+//	
+//	hauptwindow.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+//	hauptwindow.pack();
+//	hauptwindow.setVisible(true);
+//	Thread.sleep(3000);
+//	hauptwindow.setVisible(false);
+//	Thread.sleep(3000);
+//	hauptwindow.setVisible(true);
 	
 	Wolf roger = new Wolf();
 	Tiger oleg = new Tiger();
