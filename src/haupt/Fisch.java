@@ -16,6 +16,7 @@ public class Fisch extends Tier implements IOpfertier
 	{
 		return leben;
 	}
+	
 
 	@Override
 	public boolean lebendig() {
