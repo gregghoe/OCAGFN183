@@ -16,16 +16,16 @@ public class Loewe extends Tier implements IRaubtier
 	}
 	public Loewe(int leben, int staerke)
 	{
-		this(leben,staerke,5);
+		this(leben,staerke,7);
 		
 	}
 	public Loewe(int leben)
 	{
-		this(leben,9);
+		this(leben,12);
 	}	
 	public Loewe()
 	{
-		this(7);
+		this(9);
 	}
 	
 	public void setLeben(int leben)
@@ -84,6 +84,12 @@ public class Loewe extends Tier implements IRaubtier
 	{
 		System.out.println("Aua, hee wer beist mich da???");
 
+	}
+	@Override
+	public int setLeben()
+	{
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }
