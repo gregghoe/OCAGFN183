@@ -47,5 +47,11 @@ public class Puma extends Tier implements IRaubtier
 		// TODO Auto-generated method stub
 		
 	}
+	@Override
+	public void setLeben(int i)
+	{
+		// TODO Auto-generated method stub
+		
+	}
 
 }

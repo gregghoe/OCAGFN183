@@ -56,4 +56,11 @@ public class Hai extends Tier implements IRaubtier
 
 	}
 
+	@Override
+	public void setLeben(int i)
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
 }

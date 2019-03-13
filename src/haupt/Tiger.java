@@ -50,4 +50,11 @@ public class Tiger extends Tier implements IRaubtier {
 	public String getName() { return this.name; }
 	@Override
 	public int getLeben() { return this.leben; }
+
+	@Override
+	public void setLeben(int i)
+	{
+		// TODO Auto-generated method stub
+		
+	}
 }

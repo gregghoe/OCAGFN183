@@ -65,4 +65,11 @@ public class Robbe extends Tier implements IOpfertier
 		return null;
 	}
 
+	@Override
+	public void setLeben(int i)
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
 }

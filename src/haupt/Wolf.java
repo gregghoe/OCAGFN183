@@ -46,4 +46,11 @@ public class Wolf extends Tier implements IRaubtier
 		return hello;
 	}
 
+	@Override
+	public void setLeben(int i)
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
 }

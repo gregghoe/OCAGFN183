@@ -46,6 +46,12 @@ public class Zebra extends Tier implements IOpfertier
 		this.setLeben(0);	
 		System.out.println(this.getName()+" Opfertier ich bin Tot meineLebenspunkt sind bei:" + this.getLeben() );
 	}
+	@Override
+	public IOpfertier fortpflanze()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 
 	

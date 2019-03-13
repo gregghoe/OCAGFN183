@@ -50,5 +50,11 @@ public class Gazelle extends Tier implements IOpfertier {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	@Override
+	public void setLeben(int i)
+	{
+		// TODO Auto-generated method stub
+		
+	}
 
 }

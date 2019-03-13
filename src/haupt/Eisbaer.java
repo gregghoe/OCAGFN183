@@ -62,4 +62,11 @@ public class Eisbaer extends Tier implements IRaubtier
 	{
 		System.out.println("Au.... =(");
 	}
+
+	@Override
+	public void setLeben(int i)
+	{
+		// TODO Auto-generated method stub
+		
+	}
 }
