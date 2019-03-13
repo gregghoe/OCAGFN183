@@ -41,8 +41,8 @@ public class StreichelZoo
 	Hai steffen = new Hai("Sharkie", 10);
 	System.out.println(steffen);
 	steffen.fresse(new Gazelle());
-	joachim.fresse(new Fisch());
-	robin.fresse(new Robbe("kip", 2));
+//	joachim.fresse(new Fisch());
+//	robin.fresse(new Robbe("kip", 2));
 	
 //	Pinguin pp = new Pinguin();
 //	Ratte rr = new Ratte();
@@ -62,11 +62,11 @@ public class StreichelZoo
 	for (int j = 0; j < raubtiere.length; j++) {
 		switch(ThreadLocalRandom.current().nextInt(6)) {
 		case 0: raubtiere[j] = new Wolf(); raubtiere[j].fresse(new Gazelle()); break;
-		case 1: raubtiere[j] = new Tiger(); raubtiere[j].fresse(new Gazelle());
-		case 2: raubtiere[j] = new Puma(); raubtiere[j].fresse(new Gazelle());
-		case 3: raubtiere[j] = new Eisbaer(); raubtiere[j].fresse(new Gazelle());
-		case 4: raubtiere[j] = new Loewe(); raubtiere[j].fresse(new Gazelle());
-		case 5: raubtiere[j] = new Hai("Hai "+j, 10); raubtiere[j].fresse(new Gazelle());
+		case 1: raubtiere[j] = new Tiger(); raubtiere[j].fresse(new Gazelle()); break;
+		case 2: raubtiere[j] = new Puma(); raubtiere[j].fresse(new Gazelle()); break;
+		case 3: raubtiere[j] = new Eisbaer(); raubtiere[j].fresse(new Gazelle()); break;
+		case 4: raubtiere[j] = new Loewe(); raubtiere[j].fresse(new Gazelle()); break;
+		case 5: raubtiere[j] = new Hai("Hai "+j, 10); raubtiere[j].fresse(new Gazelle()); break;
 		}
 	}
 //	------  OLEG-ENDE  ------
