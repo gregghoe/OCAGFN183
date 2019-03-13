@@ -2,7 +2,7 @@ package haupt;
 
 public class Zebra extends Tier implements IOpfertier
 {
-	
+	///
 	
 
 	@Override
