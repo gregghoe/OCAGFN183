@@ -1,5 +1,5 @@
 package haupt;
-
+// COMMIT FORCE
 public class Loewe extends Tier implements IRaubtier
 {
 	private int leben;

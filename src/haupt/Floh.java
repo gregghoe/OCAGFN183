@@ -1,5 +1,5 @@
 package haupt;
-
+// COMMIT FORCE
 public class Floh {
 	
 	private String name;
@@ -13,7 +13,7 @@ public class Floh {
 
 	public void zeigDich()
 	{
-		System.out.println("Floh "+this.name + ": Ich hüpfe herum");
+		System.out.println("Floh "+this.name + ": Ich hï¿½pfe herum");
 	}
 	
 	public String getName() { return name; }

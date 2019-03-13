@@ -1,5 +1,5 @@
 package haupt;
-
+// COMMIT FORCE
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Gazelle extends Tier implements IOpfertier {

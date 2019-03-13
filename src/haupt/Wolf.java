@@ -2,7 +2,7 @@ package haupt;
 
 public class Wolf extends Tier implements IRaubtier
 {
-
+	// COMMIT FORCE
 	@Override
 	public String getName()
 	{

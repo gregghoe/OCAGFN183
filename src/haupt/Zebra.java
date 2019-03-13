@@ -3,7 +3,7 @@ package haupt;
 public class Zebra extends Tier implements IOpfertier
 {
 	///
-	
+	// COMMIT FORCE
 
 	@Override
 	public String getName()

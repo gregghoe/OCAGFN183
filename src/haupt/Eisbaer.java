@@ -1,5 +1,5 @@
 package haupt;
-
+// COMMIT FORCE
 public class Eisbaer extends Tier implements IRaubtier
 {
 	boolean hunger = true;
