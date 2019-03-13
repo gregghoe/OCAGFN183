@@ -85,11 +85,6 @@ public class Loewe extends Tier implements IRaubtier
 		System.out.println("Aua, hee wer beist mich da???");
 
 	}
-	@Override
-	public int setLeben()
-	{
-		// TODO Auto-generated method stub
-		return 0;
-	}
+
 
 }
