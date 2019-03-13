@@ -50,4 +50,10 @@ public class Fisch extends Tier implements IOpfertier
 		this.leben=0;
 		System.out.println(this.getName() + "ist gestorben");
 	}
+
+	@Override
+	public IOpfertier fortpflanze() 
+	{
+		return null;
+	}
 }
