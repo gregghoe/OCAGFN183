@@ -5,7 +5,14 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public abstract class Tier
 {
-	private int leben;
+
+	protected  int leben;
+	String name;
+	int staerke;
+	
+	public abstract void setLeben(int i);
+
+
 	public  ArrayList<Floh> floehe = null;
 	public boolean dummy;
 	public Tier() 
@@ -21,24 +28,24 @@ public abstract class Tier
 		boolean b = ThreadLocalRandom.current().nextBoolean();
 		if(b) {
 			ArrayList<Floh> temp = new ArrayList<>();
-			temp.addAll(this.floehe); // Eigene Flöhe
-			temp.addAll(tier.floehe); // Fremde Flöhe
-			this.floehe.clear(); // Eigene Flöhe löschen
-			tier.floehe.clear(); // Fremde Flöhe löschen
+			temp.addAll(this.floehe); // Eigene Flï¿½he
+			temp.addAll(tier.floehe); // Fremde Flï¿½he
+			this.floehe.clear(); // Eigene Flï¿½he lï¿½schen
+			tier.floehe.clear(); // Fremde Flï¿½he lï¿½schen
 			
-			temp.forEach((e) -> {if(Math.random()<0.5) {this.floehe.add(e);} else{tier.floehe.add(e);}});
-			// Mögliche andere Lösungen:
-			//dummy = (ThreadLocalRandom.current().nextBoolean()) ? this.floehe.add(e) : tier.floehe.add(e));
-//			for (Floh floh : temp) 
-//			{
-//				if(ThreadLocalRandom.current().nextBoolean()) {
-//					this.floehe.add(floh);
-//				} else {tier.floehe.add(floh);
-//				}
-//			}	
-			System.out.println("Flöhe gewechselt!");
+//			temp.forEach((e) -> {if(Math.random()<0.5) {this.floehe.add(e);} else{tier.floehe.add(e);}});
+//			// Mï¿½gliche andere Lï¿½sungen:
+//			//dummy = (ThreadLocalRandom.current().nextBoolean()) ? this.floehe.add(e) : tier.floehe.add(e));
+			for (Floh floh : temp) 
+			{
+				if(ThreadLocalRandom.current().nextBoolean()) {
+					this.floehe.add(floh);
+				} else {tier.floehe.add(floh);
+				}
+			}	
+			System.out.println("Flï¿½he gewechselt!");
 		} else {
-			System.out.println("Flöhe bleiben wo Sie sind!");
+			System.out.println("Flï¿½he bleiben wo Sie sind!");
 		}
 		return b;
 	}

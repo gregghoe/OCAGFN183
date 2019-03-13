@@ -1,5 +1,5 @@
 package haupt;
-
+// COMMIT FORCE
 public class Eisbaer extends Tier implements IRaubtier
 {
 	boolean hunger = true;
@@ -61,5 +61,12 @@ public class Eisbaer extends Tier implements IRaubtier
 	public void aua() 
 	{
 		System.out.println("Au.... =(");
+	}
+
+	@Override
+	public void setLeben(int i)
+	{
+		// TODO Auto-generated method stub
+		
 	}
 }

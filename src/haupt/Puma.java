@@ -1,5 +1,5 @@
 package haupt;
-
+// COMMIT FORCE
 public class Puma extends Tier implements IRaubtier
 {
     private String name;
@@ -43,6 +43,12 @@ public class Puma extends Tier implements IRaubtier
 	}
 	@Override
 	public void aua()
+	{
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void setLeben(int i)
 	{
 		// TODO Auto-generated method stub
 		

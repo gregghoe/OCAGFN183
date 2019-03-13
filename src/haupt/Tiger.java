@@ -1,5 +1,5 @@
 package haupt;
-
+// COMMIT FORCE
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Tiger extends Tier implements IRaubtier {
@@ -39,6 +39,7 @@ public class Tiger extends Tier implements IRaubtier {
 				+this.getLeben()+" auf ");
 		this.leben-=ThreadLocalRandom.current().nextInt(this.leben);
 		System.out.println(this.getLeben()+" reduziert.");
+		String s = this.name.concat(" x_X ");
 	}
 	@Override
 	public boolean lebendig() {
@@ -50,4 +51,11 @@ public class Tiger extends Tier implements IRaubtier {
 	public String getName() { return this.name; }
 	@Override
 	public int getLeben() { return this.leben; }
+
+	@Override
+	public void setLeben(int i)
+	{
+		// TODO Auto-generated method stub
+		
+	}
 }
