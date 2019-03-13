@@ -15,7 +15,7 @@ public class Gazelle extends Tier implements IOpfertier {
 	public void schreie() {
 		String s ="";
 		if(this.lebendig()) {
-			s="Gazelle "+this.getName()+"(Leben="+this.getLeben()+"): ÄHHH!!!";
+			s="Gazelle "+this.getName()+"(Leben="+this.getLeben()+"): ï¿½HHH!!!";
 		} else {
 			s="Gazelle tot";
 		}
@@ -44,5 +44,11 @@ public class Gazelle extends Tier implements IOpfertier {
 	public String getName() {return this.name;}
 	@Override
 	public int getLeben() {return this.leben;}
+	@Override
+	public IOpfertier fortpflanze()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }
